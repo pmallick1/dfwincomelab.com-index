@@ -1,0 +1,551 @@
+/*********************************************
+	Manoverboard - Core Styles - v.2017
+*********************************************/
+
+/* Remember to minimize this file before putting into production site */
+
+/* Meyer reset ------------ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+nav,
+section,
+aside {
+    display: block;
+    outline: none;
+}
+
+/* fix the box model ------------ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* form field standardization ------------ */
+
+::-moz-selection {
+    background: #9ddeee;
+    text-shadow: none;
+}
+
+::selection {
+    background: #9ddeee;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* clearfix ------------ */
+
+.alm-reveal:after,
+.cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .cf,
+* html .alm-reveal {
+    zoom: 1;
+}
+
+/* IE6 */
+
+*:first-child + html .cf,
+*:first-child + html .alm-reveal {
+    zoom: 1;
+}
+
+/* IE7 */
+
+/* easy math font sizing: ( 180% = 18pt ) ------------ */
+
+body {
+    font-size: 62.5%;
+}
+
+/* prevent font size compounding */
+
+li li {
+    font-size: 100%;
+}
+
+/* superscript and subscript */
+
+sup,
+sub {
+    font-size: 66%;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+/* videos ------------ */
+
+.videoWrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.videoWrap.fourByThree {
+    padding-bottom: 75%;
+}
+
+.videoWrap iframe,
+.videoWrap object,
+.videoWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* columns ------------ */
+
+.twoC .c1,
+.twoC .c2 {
+    width: 50%;
+}
+
+.twoC .c1 {
+    float: left;
+    padding-right: 60px;
+}
+
+.twoC .c2 {
+    float: right;
+    padding-left: 60px;
+}
+
+.threeC .c1,
+.threeC .c2,
+.threeC .c3 {
+    width: 33.33333333%;
+}
+
+.threeC .c1 {
+    float: left;
+    padding-right: 20px;
+}
+
+.threeC .c2 {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.threeC .c3 {
+    float: right;
+    padding-left: 20px;
+}
+
+.fourC .c1,
+.fourC .c2,
+.fourC .c3,
+.fourC .c4 {
+    width: 25%;
+}
+
+.fourC .c1 {
+    float: left;
+    padding-right: 20px;
+}
+
+.fourC .c2 {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fourC .c3 {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fourC .c4 {
+    float: right;
+    padding-left: 20px;
+}
+
+/* floats ------------ */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cl {
+    clear: left;
+}
+
+.cr {
+    clear: right;
+}
+
+.cb {
+    clear: both;
+}
+
+/* display ------------ */
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* padding ------------ */
+
+.notop {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.nobottom {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* text overrides ------------ */
+
+.caps {
+    text-transform: uppercase !important;
+}
+
+.nocaps {
+    text-transform: none !important;
+}
+
+/* strip top whitespace from headers ------------ */
+
+.layer h1:first-child,
+.layer h2:first-child,
+.layer h3:first-child,
+.layer h4:first-child,
+.layer h5:first-child,
+.layer h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Wordpress Post Images ------------ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    max-width: 40%;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    max-width: 40%;
+}
+
+.aligncenter {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.alignnone {
+    float: none;
+    margin: 20px 0;
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+/* form tweakers ------------ */
+
+input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+input,
+textarea,
+submit,
+select {
+    max-width: 100%;
+}
+
+/* transitions ------------ */
+
+a,
+input,
+.transition {
+    -webkit-transition: all 0.09s ease-in-out;
+    -moz-transition: all 0.09s ease-in-out;
+    -ms-transition: all 0.09s ease-in-out;
+    -o-transition: all 0.09s ease-in-out;
+    transition: all 0.09s ease-in-out;
+}
+
+/* transitions ------------ */
+
+.transitionSlow {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+/* other helpers ------------ */
+
+em,
+i {
+    font-style: italic;
+}
+
+abbr {
+    cursor: help;
+}
+
+/* wordpress admin tweaks ------------ */
+
+#wpadminbar {
+    z-index: 100000000 !important;
+}
+
+body #wrapper .post-edit-link {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -33px !important;
+    right: 30px !important;
+    padding: 10px 30px 10px 30px !important;
+    color: white !important;
+    background: #292929 !important;
+    border-radius: 1px 2px 5px 5px !important;
+    font-family: "andale mono", "courier new", courier, monospace !important;
+    font-size: 140%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+body #wrapper .post-edit-link:hover {
+    background-color: #f38f00 !important;
+}
+
+/* overflow settings to prevent double-scrollbar ------------ */
+
+html,
+body,
+#wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+}
+
+/* kill underlines in nav and headers ------------ */
+
+nav a,
+.layer h1 a,
+.layer h2 a,
+.layer h3 a,
+.layer h4 a,
+.layer h5 a,
+.layer h6 a {
+    text-decoration: none;
+}
+
+/* text rendering */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
